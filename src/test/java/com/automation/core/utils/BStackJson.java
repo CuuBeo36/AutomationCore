@@ -8,17 +8,18 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.URL;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
 public class BStackJson {
-    public static DesiredCapabilities getCapabilitiesFromJson(String deviceName) {
+    public static DesiredCapabilities getCapabilitiesFromJson(String filePath, String deviceName) {
         // Create DesiredCapabilities object
         DesiredCapabilities capabilities = new DesiredCapabilities();
         try {
-            String content = new String(Files.readAllBytes(Paths.get(System.getProperty("user.dir") + "\\input\\mobile\\devices.json")));
+            String content = new String(Files.readAllBytes(Path.of(filePath)));
             JSONObject devices = new JSONObject(content);
             JSONObject device = devices.getJSONObject(deviceName);
 

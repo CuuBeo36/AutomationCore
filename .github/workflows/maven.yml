@@ -35,8 +35,8 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
 
-      - name: Upload artifact
+      - name: Upload jar files
         uses: actions/upload-artifact@v2
         with:
-          name: my-artifact
+          name: Jar files
           path: target/*.jar

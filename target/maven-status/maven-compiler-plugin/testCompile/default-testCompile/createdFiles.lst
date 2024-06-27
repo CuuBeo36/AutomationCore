@@ -5,6 +5,7 @@ com\automation\core\utils\ExtentTestManager.class
 com\automation\core\utils\Base64.class
 com\automation\core\utils\ExtentReport.class
 com\automation\core\utils\JsonUtils.class
+com\automation\core\utils\BStackJson.class
 com\automation\core\utils\Message.class
 com\automation\core\utils\Config.class
 com\automation\core\utils\CsvUtils2.class
