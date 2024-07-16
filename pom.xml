@@ -3,9 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.automation</groupId>
     <artifactId>automation-core</artifactId>
-    <version>3.4</version>
+    <version>3.6</version>
     <name>Archetype - AutomationCore</name>
     <url>http://maven.apache.org</url>
+    <properties>
+        <webdriver.manager.version>5.8.0</webdriver.manager.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -82,6 +85,17 @@
             <groupId>commons-configuration</groupId>
             <artifactId>commons-configuration</artifactId>
             <version>1.10</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>4.18.1</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
